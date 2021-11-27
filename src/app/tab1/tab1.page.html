@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Enter Details
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,296 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Enter Details</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item>
+    <ion-label position="left">Name: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="left">Email: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="left">Contact: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="left">Roll no: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <!-- HSC DETAILS -->
+  <ion-title>
+    <h3>HSC Detials</h3>
+  </ion-title>
+  <ion-item>
+    <ion-label position="left">College name: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Passing Year</ion-label>
+    <ion-datetime value="2015-02-19" placeholder="Select Year"></ion-datetime>
+  </ion-item>
+
+  <form oninput="x.value=parseInt(a.value)/parseInt(b.value)*100">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item class="no-click">
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x" for="a b"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+  </form>
+
+<!-- SSC DETAILS -->
+  <ion-title>
+    <h3>SSC Detials</h3>
+  </ion-title>
+  <ion-item>
+    <ion-label position="left">College name: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Passing Year</ion-label>
+    <ion-datetime value="2015-02-19" placeholder="Select Year"></ion-datetime>
+  </ion-item>
+
+  <form oninput="x2.value=parseInt(a2.value)/parseInt(b2.value)*100">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a2" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b2" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item class="no-click">
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x2" for="a2 b2"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+  </form>
+  
+  <!-- SEMESTER DETAILS -->
+  <ion-title>
+    <h3>Semester Detials</h3>
+  </ion-title>
+
+<ion-card>
+  <ion-card-title class="ion-text-center">
+    Semester 1 Details
+  </ion-card-title>
+    <form oninput="x3.value=parseInt(a3.value)/parseInt(b3.value)*100 ; c1.value=parseInt(x3.value)/9.5">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a3" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b3" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x3" for="a3 b3"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CGPA: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="c1" for="a3 b3"></ion-input>
+      <ion-label disabled style="margin-right: 50px;"></ion-label>
+    </ion-item>
+  </form>
+</ion-card>
+
+<ion-card>
+  <ion-card-title class="ion-text-center">
+    Semester 2 Details
+  </ion-card-title>
+    <form oninput="x4.value=parseInt(a4.value)/parseInt(b4.value)*100 ; c2.value=parseInt(x4.value)/9.5">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a4" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b4" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x4" for="a4 b4"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CGPA: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="c2" for="a4 b4"></ion-input>
+      <ion-label disabled style="margin-right: 50px;"></ion-label>
+    </ion-item>
+  </form>
+</ion-card>
+
+<ion-card>
+  <ion-card-title class="ion-text-center">
+    Semester 3 Details
+  </ion-card-title>
+    <form oninput="x5.value=parseInt(a5.value)/parseInt(b5.value)*100 ; c3.value=parseInt(x5.value)/9.5">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a5" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b5" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x5" for="a5 b5"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CGPA: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="c3" for="a5 b5"></ion-input>
+      <ion-label disabled style="margin-right: 50px;"></ion-label>
+    </ion-item>
+  </form>
+</ion-card>
+
+<ion-card>
+  <ion-card-title class="ion-text-center">
+    Semester 4 Details
+  </ion-card-title>
+    <form oninput="x6.value=parseInt(a6.value)/parseInt(b6.value)*100 ; c4.value=parseInt(x5.value)/9.5">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a5" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b5" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x5" for="a5 b5"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CGPA: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="c4" for="a5 b5"></ion-input>
+      <ion-label disabled style="margin-right: 50px;"></ion-label>
+    </ion-item>
+  </form>
+</ion-card>
+
+<ion-card>
+  <ion-card-title class="ion-text-center">
+    Semester 5 Details
+  </ion-card-title>
+    <form oninput="x7.value=parseInt(a7.value)/parseInt(b7.value)*100 ; c5.value=parseInt(x7.value)/9.5">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a7" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b7" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x4" for="a7 b7"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CGPA: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="c5" for="a7 b7"></ion-input>
+      <ion-label disabled style="margin-right: 50px;"></ion-label>
+    </ion-item>
+  </form>
+</ion-card>
+
+<ion-card>
+  <ion-card-title class="ion-text-center">
+    Semester 6 Details
+  </ion-card-title>
+    <form oninput="x8.value=parseInt(a8.value)/parseInt(b8.value)*100 ; c6.value=parseInt(x8.value)/9.5">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a8" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b8" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x8" for="a8 b8"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CGPA: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="c6" for="a8 b8"></ion-input>
+      <ion-label disabled style="margin-right: 50px;"></ion-label>
+    </ion-item>
+  </form>
+</ion-card>
+
+<ion-card>
+  <ion-card-title class="ion-text-center">
+    Any Additional Course
+  </ion-card-title>
+  <ion-item class="ion-text-center">
+    <ion-input placeholder="Name of the Course"></ion-input>
+  </ion-item>
+    <form oninput="x8.value=parseInt(a8.value)/parseInt(b8.value)*100">
+    <ion-item>
+      <div class="marks">
+        <ion-input placeholder="Marks" id="a8" class="ion-text-center"></ion-input>
+      </div>
+      <h1>/</h1>
+      <div class="outof">
+        <ion-input placeholder="Out of" id="b8" class="ion-text-center"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Percentage: </ion-label>
+      <ion-input style="margin-left: 30px;" position="right" disabled name="x8" for="a8 b8"></ion-input>
+      <ion-label disabled style="margin-right: 50px;">%</ion-label>
+    </ion-item>
+  </form>
+</ion-card>
+
+<!-- resume  -->
+<ion-card>
+<ion-card-title class="ion-text-center">Upload Resume</ion-card-title>
+</ion-card>
+
 </ion-content>
