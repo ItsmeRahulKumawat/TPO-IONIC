@@ -12,38 +12,39 @@
       <ion-title size="large">Enter Details</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <img src="assets/divider.png" alt="">
   <ion-item>
-    <ion-label position="left">Name: </ion-label>
+    <ion-label class="label" position="left">Name: </ion-label>
     <ion-input [(ngModel)]="Name"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="left">Email: </ion-label>
+    <ion-label  class="label" position="left">Email: </ion-label>
     <ion-input [(ngModel)]="Email"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="left">Contact: </ion-label>
+    <ion-label  class="label" position="left">Contact: </ion-label>
     <ion-input [(ngModel)]="Contact"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="left">Roll no: </ion-label>
+    <ion-label  class="label" position="left">Roll no: </ion-label>
     <ion-input [(ngModel)]="Roll"></ion-input>
   </ion-item>
 
+  <img src="assets/divider.png" alt="">
   <!-- HSC DETAILS -->
   <ion-title>
     <h3>HSC Detials</h3>
   </ion-title>
   <ion-item>
-    <ion-label position="left">College name: </ion-label>
+    <ion-label  class="label" position="left">College name: </ion-label>
     <ion-input></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label>Passing Year</ion-label>
+    <ion-label class="label" >Passing Year</ion-label>
     <ion-datetime displayFormat="YYYY" pickerFormat="YYYY" placeholder="Select Year" [(ngModel)]="Passout_Year_hsc" ></ion-datetime>
   </ion-item>
 
@@ -58,24 +59,25 @@
       </div>
     </ion-item>
 
-    <ion-item class="no-click">
-      <ion-label>Percentage: </ion-label>
+    <ion-item>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" name="x" for="a b" [(ngModel)]="Per_hsc"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
   </form>
 
+  <img src="assets/divider.png" alt="">
 <!-- SSC DETAILS -->
   <ion-title>
     <h3>SSC Detials</h3>
   </ion-title>
   <ion-item>
-    <ion-label position="left">College name: </ion-label>
+    <ion-label  class="label"  position="left">College name: </ion-label>
     <ion-input></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label>Passing Year</ion-label>
+    <ion-label  class="label" >Passing Year</ion-label>
     <ion-datetime displayFormat="YYYY" pickerFormat="YYYY" placeholder="Select Year" [(ngModel)]="Passout_Year_ssc"></ion-datetime>
   </ion-item>
 
@@ -91,12 +93,13 @@
     </ion-item>
 
     <ion-item class="no-click">
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" name="x2" for="a2 b2" [(ngModel)]="Per_ssc"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label" disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
   </form>
   
+  <img src="assets/divider.png" alt="">
   <!-- SEMESTER DETAILS -->
   <ion-title>
     <h3>Semester Detials</h3>
@@ -118,14 +121,14 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="x3" for="a3 b3"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label" disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>CGPA: </ion-label>
+      <ion-label  class="label" >CGPA: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="c1" for="a3 b3"></ion-input>
-      <ion-label disabled style="margin-right: 30px;"></ion-label>
+      <ion-label  class="label" disabled style="margin-right: 30px;"></ion-label>
     </ion-item>
   </form>
 </ion-card>
@@ -146,14 +149,14 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="x4" for="a4 b4"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>CGPA: </ion-label>
+      <ion-label  class="label" >CGPA: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="c2" for="a4 b4"></ion-input>
-      <ion-label disabled style="margin-right: 30px;"></ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;"></ion-label>
     </ion-item>
   </form>
 </ion-card>
@@ -174,14 +177,14 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="x5" for="a5 b5"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>CGPA: </ion-label>
+      <ion-label  class="label" >CGPA: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="c3" for="a5 b5"></ion-input>
-      <ion-label disabled style="margin-right: 30px;"></ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;"></ion-label>
     </ion-item>
   </form>
 </ion-card>
@@ -202,14 +205,14 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="x6" for="a6 b6"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>CGPA: </ion-label>
+      <ion-label  class="label" >CGPA: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="c4" for="a6 b6"></ion-input>
-      <ion-label disabled style="margin-right: 30px;"></ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;"></ion-label>
     </ion-item>
   </form>
 </ion-card>
@@ -230,14 +233,14 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="x7" for="a7 b7"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>CGPA: </ion-label>
+      <ion-label  class="label" >CGPA: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="c5" for="a7 b7"></ion-input>
-      <ion-label disabled style="margin-right: 30px;"></ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;"></ion-label>
     </ion-item>
   </form>
 </ion-card>
@@ -258,17 +261,19 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" name="x8" for="a8 b8" [(ngModel)]="Per_bach"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>CGPA: </ion-label>
+      <ion-label  class="label" >CGPA: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" name="c6" for="a8 b8" [(ngModel)]="Cgpa_bach"></ion-input>
-      <ion-label disabled style="margin-right: 30px;"></ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;"></ion-label>
     </ion-item>
   </form>
 </ion-card>
+
+<img src="assets/divider.png" alt="">
 
 <ion-card>
   <ion-card-title class="ion-text-center">
@@ -289,12 +294,14 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Percentage: </ion-label>
+      <ion-label  class="label" >Percentage: </ion-label>
       <ion-input style="margin-left: 30px;" position="right" disabled name="x9" for="a9 b9"></ion-input>
-      <ion-label disabled style="margin-right: 30px;">%</ion-label>
+      <ion-label  class="label"  disabled style="margin-right: 30px;">%</ion-label>
     </ion-item>
   </form>
 </ion-card>
+
+<img src="assets/divider.png" alt="">
 
 <!-- resume  -->
 <ion-card>
@@ -303,7 +310,7 @@
   <ion-input type="file" id="myFile" name="filename"></ion-input>
 </form>
 </ion-card>
-<ion-button (click)="goToAboutPage()" expand="block" shape="round">
+<ion-button color="danger" (click)="goToAboutPage()" expand="full">
   View Your Detials
 </ion-button>
 

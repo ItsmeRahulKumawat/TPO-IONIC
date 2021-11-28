@@ -12,7 +12,7 @@
       <ion-title size="large">Company Details</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <img src="assets/divider.png" alt="">
   <!-- Name of the company, Location, Range of the salary be given for internship/Placement, Short Profile -->
   <ion-card class="ion-text-center">
     <img src="assets/ms.png" alt="">
@@ -29,9 +29,10 @@
         <ion-label>After PPO: <b>2500000 LPA</b></ion-label>
       </ion-item>      
       <ion-button color="medium" class="ion-text-center" (click)="ms()" expand="block">Job Description</ion-button>    
-      <ion-button color="warning" class="ion-text-center" (click)="showAlert()">Apply</ion-button>
+      <ion-button color="danger" class="ion-text-center" (click)="showAlert()">Apply</ion-button>
   </ion-card>
-
+  
+  <img src="assets/divider.png" alt="">
   <ion-card class="ion-text-center">
     <img src="assets/pp.png" alt="">
       <ion-item>
@@ -47,6 +48,6 @@
         <ion-label>After PPO: <b>2700000 LPA</b></ion-label>
       </ion-item>
       <ion-button color="medium" class="ion-text-center" (click)="pp()" expand="block">Job Description</ion-button>   
-      <ion-button color="warning" class="ion-text-center" (click)="showAlert()">Apply</ion-button>
+      <ion-button color="danger" class="ion-text-center" (click)="showAlert()">Apply</ion-button>
   </ion-card>
 </ion-content>

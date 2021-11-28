@@ -49,7 +49,7 @@ export class Tab3Page {
       }
   
       const transfer =this.transfer.create();
-      transfer.download('https://drive.google.com/file/d/1wNX3K5sR18McFKgm7L0BCOez5QgK-A8U/view?usp=sharing', path + 'myfile.pdf').then(entry =>{
+      transfer.download('https://www.apnamba.com/Ebooks-pdf/The%20Monk%20who%20sold%20his%20ferrari%20-%20Robin%20Sharma%20(PDF)%20%5BQwerty80%5D.pdf', path + 'myfile.pdf').then(entry =>{
         let url = entry.toURL();
         this.document.viewDocument(url, 'application/pdf',{});
       })
